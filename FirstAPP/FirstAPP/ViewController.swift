@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         print("A功能")
+        print("B功能")
+
     }
 
 
