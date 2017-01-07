@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         print("A功能")
         print("B功能")
         print("C功能")
-
+        print("D功能")
     }
 
 
