@@ -15,18 +15,16 @@ class ViewController: UIViewController {
         let url = URL(string: paramStr)
         if UIApplication.shared.canOpenURL(url!) {
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-//            UIApplication.shared.open(<#T##url: URL##URL#>, options: <#T##[String : Any]#>, completionHandler: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+        }else{
+            let alert = UIAlertController(title: "提示", message: "未安装您要跳转的APP", preferredStyle: .alert)
+            show(alert, sender: nil)
         }
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+        
     }
 
 
